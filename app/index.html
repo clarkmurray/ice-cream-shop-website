@@ -8,78 +8,92 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
-	<div class="row">
-		<div class="col-xs-12 header">
-			<h1>Clark's Ice Cream Shop</h1>
-		</div>
+	<div class="row header">
+		<h1>Clark's Ice Cream Shop</h1>
 	</div>
-	<br />
-	<br />
-	<br />
-	<div class="row">
-		<div class="col-xs-2"></div>
+	<div class="row is-flex">
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-8 intro">
+			<h2 class="text-center">The Best Ice Cream in Central Kentucky!</h2>
+			<p>Buying and savoring tasty ice cream has never been easier thanks to Clark's Ice Cream Shop! Since 2017, we have been creating the best imaginary ice cream in Central Kentucky and serving it to scores of satisfied non-existent customers. I don't actually know how ice cream is made, but thanks to the power and anonymity of the internet, I don't have to! I can claim whatever I want with little to no evidence, and and people will believe me! It's really great. Kind of like my ice cream, actually. Seriously, buy some. Just send me your credit card information and I'll make sure you get a tasty cup or cone with the flavors and toppings of your choosing. Or I won't. Who knows? It's the internet.</p>
+			<p>If this store were real, how would you buy its imaginary ice cream, you ask? It's easy! (Not hard! Easy...). The process is broken down into three simple steps. First, you select a flavor. We serve both regular and seasonal options. The regular flavors are served year-round, but the seasonal flavors follow Father Time, so check in often--you never know what new (and limited) flavors we'll have to try! After you've decided on which flavor you want, you'll want to smother it with toppings. Or you won't. That's a personal preference really--we're not here to tell you how to live your life or how to eat your ice cream. Finally, after carefully coordinating your ice cream flavor with your toppings, you'll be confronted with charting the course of the rest of your life. Will you be a cone person, or a cup person? Will you sacrifice extra flavor for convenience and safety, or will you risk it all for the added benefit of that sweet wafflely goodness?</p>
+		</div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
+	</div>
+	<div class="row is-flex">
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-8 text-center">
 			<h2>Step 1: Select a Flavor</h2>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
 	<div class="row is-flex">
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-4 pickFlavor pick-left">
-			<h4>Regular Flavors</h4>
+			<h4 class="underline">Regular Flavors</h4>
 			<table id="regular">
 			</table>
 		</div>
 		<div class="col-xs-4 pickFlavor pick-right">
-			<h4>Seasonal Flavors</h4>
+			<h4 class="underline">Seasonal Flavors</h4>
 			<table id="seasonal"></table>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
-	<br />
-	<br />
-	<div class="row">
-		<div class="col-xs-2"></div>
+	<div class="row is-flex">
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-8 text-center">
 			<h2>Step 2: Pick Your Toppings</h2>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
 	<div class="row is-flex">
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-2 pickTopping pick-left">&nbsp;</div>
 		<div class="col-xs-4 pickTopping">
 			<table id="toppings"></table>
 		</div>
 		<div class="col-xs-2 pickTopping pick-right">&nbsp;</div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
-	<br />
-	<br />
-	<div class="row">
-		<div class="col-xs-2"></div>
+	<div class="row is-flex">
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-8 text-center">
 			<h2>Step 3: Choose How You Want it Served</h2>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
 	<div class="row is-flex">
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-1"></div>
 		<div class="col-xs-2 pickServing pick-left"></div>
 		<div class="col-xs-4 pickServing">
 			<table id="servingoptions"></table>
 		</div>
 		<div class="col-xs-2 pickServing pick-right"></div>
-		<div class="col-xs-2"></div>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-1 outside"></div>
 	</div>
-	<br />
-	<br />
-	<br />
-	<footer>
-		<p>&copy; 2017 Clark's Ice Cream Shop</p>
+	<footer class="row is-flex">
+		<div class="col-xs-1 outside"></div>
+		<div class="col-xs-10"><p>&copy; 2017 Clark's Ice Cream Shop</p></div>
+		<div class="col-xs-1 outside"></div>
 	</footer>
 	
 
