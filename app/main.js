@@ -1,6 +1,9 @@
+var regular = document.getElementById('regular');
+var seasonal = document.getElementById('seasonal');
+
 var products = {
   
-  "Regular Flavors": [
+  "regularflavors": [
 
     {
       "name": "Chocolate",
@@ -23,7 +26,7 @@ var products = {
   ],
 
 
-  "Seasonal Flavors": [
+  "seasonalflavors": [
 
     {
       "name": "Salted Caramel",
@@ -40,7 +43,7 @@ var products = {
   ],
 
 
-  "Serving Options": [
+  "servingoptions": [
 
     {
       "name": "Waffle Cone",
@@ -80,3 +83,34 @@ var products = {
   ]
 
 };
+
+for (i=0; i < products.regularflavors.length; i++) {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode(products.regularflavors[i].name);
+  node.appendChild(textnode);
+  regular.appendChild(node);
+};
+
+for (i=0; i < products.seasonalflavors.length; i++) {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(products.seasonalflavors[i].name);
+    node.appendChild(textnode);
+    seasonal.appendChild(node);
+};
+
+for (i=0; i < products.servingoptions.length; i++) {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(products.servingoptions[i].name);
+    node.appendChild(textnode);
+    serving.appendChild(node);
+};
+
+for (i=0; i < products.Toppings.length; i++) {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(products.Toppings[i].name);
+    node.appendChild(textnode);
+    toppings.appendChild(node);
+};
+
+
+

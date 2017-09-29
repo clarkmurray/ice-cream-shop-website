@@ -1,0 +1,13 @@
+.container {
+	width: 100%;
+}
+
+h4 {
+	text-align: center;
+}
+
+.header {
+	background-color: #52A0C2;
+	color: white;
+	border-bottom: 3px solid #F58092;
+}
