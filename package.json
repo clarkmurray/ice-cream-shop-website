@@ -1,0 +1,23 @@
+{
+  "name": "icecream",
+  "version": "1.0.0",
+  "description": "This webpage is the Week 2 individual project for Awesome Inc U's Web Developer Bootcamp. It is intended to demonstrate my skills in HTML, CSS, and JavaScript. Bootstrap, Express, and Heroku are also used.",
+  "main": "app/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkmurray/ice-cream-shop-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarkmurray/ice-cream-shop-website/issues"
+  },
+  "homepage": "https://github.com/clarkmurray/ice-cream-shop-website#readme"
+}
