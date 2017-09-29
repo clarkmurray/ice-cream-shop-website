@@ -1,13 +1,83 @@
 .container {
 	width: 100%;
+	background-color: moccasin;
 }
 
-h4 {
+h1 {
 	text-align: center;
+}
+
+.flavorName, .flavorPrice {
+	font-weight: bold;
+	border-spacing: 10px;
+}
+.flavorName {
+	font-size: 120%;
 }
 
 .header {
 	background-color: #52A0C2;
 	color: white;
 	border-bottom: 3px solid #F58092;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+
+}
+
+.pickFlavor, .pickTopping, .pickServing {
+	border-top: 3px solid #52A0C2;
+	border-bottom: 3px solid #52A0C2;
+	background-color: #F58092;
+	color: white;
+}
+
+.pick-left {
+	border-left: 3px solid #52A0C2;
+}
+
+.pick-right {
+	border-right: 3px solid #52A0C2;
+}
+
+footer {
+	text-align: center;
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }

@@ -3,7 +3,7 @@
 ## Basics
 [x] 1. Create a public repo on Github for the site.
 [x] 2. Create HTML, CSS, JS, and Markdown files for the site.
-[ ] 3. Push code to Github.
+[x] 3. Push code to Github.
 [ ] 4. Deploy application to Heroku.
 
 
@@ -14,9 +14,10 @@ Menu should group menu items by type and display them in different sections of t
 4 types of products: regular ice cream flavors, seasonal ice cream flavors, toppings, serving options
 
 ## Minimal Viable Product
-[ ] 1. Make a basic webpage using HTML and CSS, with separate sections designated for each of regular ice cream flavors, seasonal ice cream flavors, toppings, and serving options.
-[ ] 2. Create a list of products and store them as data using JavaScript variables.
-[ ] 3. Use JavaScript to loop through each menu iteam and assign it to a section of the page based on the menu item's type.
+[x] 1. Make a basic webpage using HTML and CSS, with separate sections designated for each of regular ice cream flavors, seasonal ice cream flavors, toppings, and serving options.
+[x] 2. Create a list of products and store them as data using JavaScript variables.
+[x] 3. Use JavaScript to loop through each menu iteam and assign it to a section of the page based on the menu item's type.
+[ ] 4. Deployed on Heroku.
  
 
 ## Stretch Goals

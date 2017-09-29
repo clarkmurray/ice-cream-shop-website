@@ -84,32 +84,61 @@ var products = {
 
 };
 
-for (i=0; i < products.regularflavors.length; i++) {
-  var node = document.createElement("LI");
-  var textnode = document.createTextNode(products.regularflavors[i].name);
-  node.appendChild(textnode);
-  regular.appendChild(node);
+for (i = products.regularflavors.length - 1; i >= 0 ; i--) {
+    var table = document.getElementById("regular");
+    var row1 = table.insertRow(0);
+    var flavorName = row1.insertCell(0);
+    var flavorPrice = row1.insertCell(1);
+    var row2 = table.insertRow(1);
+    var flavorDescription = row2.insertCell(0);
+    var emptyRow = table.insertRow(2);
+    var lineBreak = emptyRow.insertCell(0);
+    flavorName.innerHTML = "<span class='flavorName'>" + products.regularflavors[i].name + "</span";
+    flavorPrice.innerHTML = "<span class='flavorPrice'>" + "$" + products.regularflavors[i].price + "</span>";
+    flavorDescription.innerHTML ="<span class='flavorDescription'>" + products.regularflavors[i].description + "</span>";
+
+}
+
+for (i = products.seasonalflavors.length - 1; i >= 0; i--) {
+    var table = document.getElementById("seasonal");
+    var row1 = table.insertRow(0);
+    var flavorName = row1.insertCell(0);
+    var flavorPrice = row1.insertCell(1);
+    var row2 = table.insertRow(1);
+    var flavorDescription = row2.insertCell(0);
+    var emptyRow = table.insertRow(2);
+    var lineBreak = emptyRow.insertCell(0);
+    flavorName.innerHTML = "<span class='flavorName'>" + products.seasonalflavors[i].name + "</span";
+    flavorPrice.innerHTML = "<span class='flavorPrice'>" + "$" + products.seasonalflavors[i].price + "</span>";
+    flavorDescription.innerHTML ="<span class='flavorDescription'>" + products.seasonalflavors[i].description + "</span>";
 };
 
-for (i=0; i < products.seasonalflavors.length; i++) {
-    var node = document.createElement("LI");
-    var textnode = document.createTextNode(products.seasonalflavors[i].name);
-    node.appendChild(textnode);
-    seasonal.appendChild(node);
+for (i = products.Toppings.length - 1; i >= 0; i--) {
+    var table = document.getElementById("toppings");
+    var row1 = table.insertRow(0);
+    var flavorName = row1.insertCell(0);
+    var flavorPrice = row1.insertCell(1);
+    var row2 = table.insertRow(1);
+    var flavorDescription = row2.insertCell(0);
+    var emptyRow = table.insertRow(2);
+    var lineBreak = emptyRow.insertCell(0);
+    flavorName.innerHTML = "<span class='flavorName'>" + products.Toppings[i].name + "</span";
+    flavorPrice.innerHTML = "<span class='flavorPrice'>" + "$" + products.Toppings[i].price + "</span>";
+    flavorDescription.innerHTML ="<span class='flavorDescription'>" + products.Toppings[i].description + "</span>";
 };
 
-for (i=0; i < products.servingoptions.length; i++) {
-    var node = document.createElement("LI");
-    var textnode = document.createTextNode(products.servingoptions[i].name);
-    node.appendChild(textnode);
-    serving.appendChild(node);
-};
-
-for (i=0; i < products.Toppings.length; i++) {
-    var node = document.createElement("LI");
-    var textnode = document.createTextNode(products.Toppings[i].name);
-    node.appendChild(textnode);
-    toppings.appendChild(node);
+for (i = products.servingoptions.length - 1; i >= 0; i--) {
+    var table = document.getElementById("servingoptions");
+    var row1 = table.insertRow(0);
+    var flavorName = row1.insertCell(0);
+    var flavorPrice = row1.insertCell(1);
+    var row2 = table.insertRow(1);
+    var flavorDescription = row2.insertCell(0);
+    var emptyRow = table.insertRow(2);
+    var lineBreak = emptyRow.insertCell(0);
+    flavorName.innerHTML = "<span class='flavorName'>" + products.servingoptions[i].name + "</span";
+    flavorPrice.innerHTML = "<span class='flavorPrice'>" + "$" + products.servingoptions[i].price + "</span>";
+    flavorDescription.innerHTML ="<span class='flavorDescription'>" + products.servingoptions[i].description + "</span>";
 };
 
 
